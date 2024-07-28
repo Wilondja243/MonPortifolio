@@ -1,0 +1,445 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: "Roboto",sans serif;
+}
+
+:root{
+    --white-color:#ffffff;
+    --white-middle-smoke-color:#dddddd;
+    --move-color:#920cff;
+    --rose-color:#fc08bf;
+    --dark-rose--:#bf0390;
+    --black-rose--:#8b0169;
+    --black-color:#010005;
+    --dark-blue-color-- :#070611;
+    --dark-color--:#0a0d13;
+}
+
+
+
+body{
+  background: #04050b;
+}
+
+/* header style */
+
+
+.container{
+  background: var(--dark-color--);
+}
+
+header{
+  background: var(--dark-color--);
+}
+.navigation{
+  position: sticky;
+  background: var(--dark-color--);
+  width: 100%;
+  box-shadow: 0 0 20px #0100051e;
+  top: 0;
+  z-index: 5;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    width: 85%;
+    margin: 0 auto;
+    transition: width 0.3s ease-in-out;
+}
+.nav-list h1{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.nav-list ul{
+    display: flex;
+    column-gap: 2.5em;
+}
+.nav-list ul li{
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-list ul li .link{
+    color: var(--white-middle-smoke-color);
+}
+.nav-list ul li .link.active{
+    color: var(--rose-color);
+}
+.nav-list ul li .link:hover{
+    color: var(--rose-color);
+}
+.nav-list .nav-btns button{
+   padding: 10px 30px;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+   font-size: 14px;
+   background: var(--white-color);
+   border:none;
+   cursor: pointer;
+}
+.nav-list .nav-btns :first-child{
+   border:0.3px solid var(--move-color);
+}
+.nav-list .nav-btns :last-child{
+    color: var(--white-color);
+    background: linear-gradient(to left,var(--rose-color)20%,var(--move-color));
+}
+.search-form{
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+.search-input{
+  display: flex;
+  background:var(--dark-color--);
+  border: 0.2px solid #8b016859;
+  width: 100%;
+}
+.search-input input{
+  display: flex;
+  background:var(--dark-color--);
+  border: none;
+  color: var(--white-middle-smoke-color);
+  padding: 15px 8px;
+  width: 100%;
+}
+.search-input button{
+  display: flex;
+  background:var(--black-rose--);
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+}
+
+.nav-icon,.search-icon{
+  font-size: 27px;
+  color: var(--white-color);
+  cursor: pointer;
+  display: none;
+}
+.search-icon{
+  font-size: 20px;
+  color: #f483d8d6;
+}
+
+
+
+
+/* thumbenail content style */
+
+
+.thumbenail-container{
+  margin: 2em 0;
+}
+.thumbenail{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 1em;
+  width: 85%;
+  margin: 0 auto;
+  transition: width 0.3s ease-in-out;
+}
+.what-i-do-desc{
+  margin: 2em 0;
+  color: var(--white-color);
+  width: 50vw;
+}
+.what-i-do-desc .my-name{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--dark-rose--);
+  transition: font-size 0.3s ease-in-out;
+}
+.what-i-do-desc p{
+  color: #010005e0;
+  font-size: 15px;
+  padding: 8px 0;
+}
+.get-now{
+  display: flex;
+  align-items: center;
+  column-gap: 2.5em;
+  padding: 40px 0;
+}
+.get-now button{
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--white-color);
+  background: linear-gradient(to left,var(--rose-color)20%,var(--move-color));
+}
+.get-now .position{
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+.position i{
+  font-size: 23px;
+  color: var(--move-color);
+}
+
+.social-media{
+  margin:70px 0;
+  display:flex;
+  align-items:center;
+  column-gap:2em;
+}
+.social-media .media{
+  display:flex;
+  column-gap:2em;
+}
+.social-media .media i{
+  padding:13px 15px;
+  border-radius:50%;
+  background: #bf03901b;
+}
+
+.thumbenail-img-content .images{
+  background: linear-gradient(87deg,var(--dark-color--) 30%,var(--dark-rose--) 70%);
+  border-radius: 50% 50% 0 0;
+}
+.thumbenail-img-content .images img{
+  width: 100%;
+}
+
+
+
+
+
+/* MAIN */
+
+
+
+/* services styles */
+
+
+main{
+  
+}
+.services{
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 0;
+  transition: width 0.3s ease-in-out;
+}
+.services .service-title{
+  color: var(--white-color);
+}
+.services .service-title h1{
+  color: #dddddd;
+  margin: 15px 0;
+}
+.all-services{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   column-gap: 1em;
+   margin: 50px 0;
+}
+.all-services .work-on{
+   background: #ab66990c;
+   border-radius: 5px;
+   padding: 15px 10px;
+   text-align: center;
+   cursor: pointer;
+   color: var(--white-middle-smoke-color);
+}
+.all-services .work-on i{
+   font-size: 80px;
+   color: #bf0390;
+}
+.all-services .work-on .job{
+   margin-top: 10px;
+}
+.all-services .work-on .job p{
+   margin-top: 20px;
+   color: #f4f4f49a;
+}
+
+
+
+
+/* FOOTER */
+
+
+/* footer content style */
+
+
+
+.footer-container{
+  background: var(--dark-color--);
+}
+.footer-content{
+  width: 85%;
+  margin: auto;
+}
+.footer-content .about-mey-work{
+  text-align: center;
+  color: var(--white-middle-smoke-color);
+  padding: 2em 0;
+  width: 50%;
+  margin: auto;
+  border-bottom: 2px solid #8b016828;
+}
+
+.about-mey-work h2{
+  padding: 0.5em 0;
+}
+.about-mey-work p{
+  color: #dbdbdda6;
+  font-size: 14px;
+}
+.footer-content .about-content{
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  padding-top: 60px;
+}
+.about-content .images img{
+  width: 90%;
+}
+.about-content .my-description{
+  color: var(--white-middle-smoke-color);
+}
+.my-description h2{
+  margin: 0.7em 0;
+}
+.my-description .about-me  strong,h4,p{
+  margin: 1em 0;
+  color: #ffffffc4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.details{
+  margin: 15px 0;
+}
+.details .detail-id{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.details .detail-id .infos{
+  margin: 0.8em 0;
+}
+.details .detail-id h2{
+  color: var(--black-rose--);
+  margin: 10px 0;
+}
+.details .detail-id strong{
+  
+}
+
+
+
+
+
+/* media query */
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+  .nav-list,.footer-content,.thumbenail{
+    width: 95%;
+  }
+  .what-i-do-desc .my-name{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:850px){
+  .nav-list ul{
+    display: none;
+    position: absolute;
+    right: 1em;top: 4em;
+    padding:  15px 35px;
+    background: var(--dark-blue-color--);
+    box-shadow: 0 0 10px #01000516;
+    border-radius: 0 0 5px 5px;
+  }
+  .nav-list ul.displayNav{
+    display: block;
+  }
+  .nav-list ul li{
+    margin:  15px 0;
+  }
+  .nav-icon,.search-icon{
+    display: block;
+  }
+  .search-input{
+    display: none;
+  }
+}
+
+@media screen and (max-width:800px){
+  .thumbenail{
+    display: flex;flex-wrap: wrap;justify-content: center;
+  }
+  .what-i-do-desc{
+    width: 85vw;
+  }
+  .thumbenail-img-content .images{
+    width: 70%;margin: auto;
+  }
+  .all-services{
+    grid-template-columns: repeat(2,1fr);row-gap: 1em;
+ }
+ .footer-content .about-content{
+    grid-template-columns:0.9fr;justify-content: center;
+ }
+ .footer-content .about-mey-work{
+    width: 90%;
+ }
+ .about-content .my-description{
+    width: 95%;
+ }
+ .details .detail-id{
+    width: 100%;
+ }
+}
+
+@media screen and (max-width:550px){
+  .thumbenail-img-content .images{
+    width: 90%;
+  }
+  .what-i-do-desc .my-name{
+    font-size: 8vw;text-wrap: nowrap;
+  }
+  .what-i-do-desc .work-on{
+    font-size: 18px;
+  }
+  .social-media{
+    flex-wrap: wrap;row-gap:2em;
+  }
+  .all-services{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .details .detail-id .infos{
+    font-size: 13px;
+  }
+  .what-i-do-desc p{
+    font-size: 13px;
+  }
+  
+}
+
